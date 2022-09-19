@@ -1,0 +1,138 @@
+pip install django 
+django-admin startproject name
+cd name
+python manage.py runserver
+django-admin startapp students
+templates
+'DIRS': [BASE_DIR / 'templates'],
+{%extends 'all.html'%}
+
+{% block contant%}
+<h1> this index page</h1>
+    {% endblock%}
+{% include 'slider.html'%}
+href="{% url 'about' %}"
+{%for i in list%}
+       <li>{{i}}</li>
+      {%endfor%}
+python manage.py collectstatic
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
+STATICFILES_DIRS =[
+  os.path.join (BASE_DIR / 'static')
+]
+STATIC_ROOT = os.path.join (BASE_DIR,'assets')
+
+ {% load static %}
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+python manage.py migrate
+python manage.py createsuperuser
+
+pip install pillow
+admin.site.register(Aboutus)
+python manage.py makemigrations
+python manage.py migrate
+{% csrf_token %}
+from django.contrib import admin
+from django.urls import path,include
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('HotelAp.urls'))
+
+]
+{{news.news_message|slice:":50"}}
+
+'ENGINE': 'django.db.backends.mysql',
+        'NAME':  'student_management_system1',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+
+
+STATICFILES_DIRS =[
+  os.path.join (BASE_DIR / 'static')
+]
+STATIC_ROOT = os.path.join (BASE_DIR,'assets')
+MEDIA_ROOT = os.path.join (BASE_DIR,'static/media')
+MEDIA_URL = '/media/'
+
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+        messages.DEBUG: 'alert-secondary',
+        messages.INFO: 'alert-info',
+        messages.SUCCESS: 'alert-success',
+        messages.WARNING: 'alert-warning',
+        messages.ERROR: 'alert-danger',
+ }
+from django.contrib import messages
+messages.add_message(request, messages.INFO, 'Hello world.')
+
+pip install django-adminlte-3
+// it is for old image delete
+pip install django-cleanup
+
+<body onload="window.print()">
+django virtual environment setup
+
+pip install virtualenv
+virtualenv env
+benv\Scripts\activate
+pip freeze > requirements.txt
+pip install  -r requirements.txt
+
+from django.contrib import admin
+from django.urls import path
+from django.views.generic import TemplateView
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('simple_test', TemplateView.as_view(template_name="views/layouts/backend/app.html")),
+
+]
+//email use
+http://myaccount.google.com/lesssecureapps
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'hotel1project1@gmail.com'
+EMAIL_HOST_PASSWORD = 'Hotel12@'
+
+//heruko
+ pip install gunicorn
+ pip install django-heroku
+ pip install dj_database_url
+ pip install python-decouple
+ 
+ Procfile
+ heroku keys:add
+ https://git.heroku.com/mbss2022.git
+
+ git push heroku gh-pages
+
+
+git push heroku main
+web: gunicorn Blog_pro.wsgi
+
+https://edumin.dexignlab.com/xhtml/app-profile.html
+https://demo.adminkit.io/index.html
+https://radixtouch.com/templates/admin/spiceangular/source/light/#/staff/add-staff
+https://www.grfarakan.org/
+Pagination in django with Next and Previous Button
+https://github.com/MdRanaSarkar/Django_full_Ecom_App
+
+extra fields in django user
+
+C*BQLJh@w$3EucfHP626
+
+
+Minhaj1234@
+
+
+Mbss12@
+
+ 'autocommit': True,
+ 
